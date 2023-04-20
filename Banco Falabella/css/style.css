@@ -1,0 +1,420 @@
+/* define el estilo de la barra de navegacion superior. */
+.top-bar {
+  display: flex; /*diseño de caja flexible */
+  justify-content: space-between; /* elementos distribuidos de manera uniforme a lo largo del eje horizontal */
+  align-items: center; /* los elementos deben centrarse verticalmente dentro del contenedor */
+  background-color: #333; /* color de fondo */
+  color: #fff; /* color del texto */
+  font-family: Arial, sans-serif; /* fuente del texto */
+  font-size: 12px; /* tamaño del texto */
+  height: 35px; /* altura de la barra*/
+  padding: 0 20px; /* relleno en los lados izquierdo y derecho del contenedor */
+}
+
+/* define el estilo del lado izquierdo de la barra*/
+.top-bar__left {
+  display: flex; 
+  align-items: center;
+}
+
+/* define el estilo del lado derecho de la barra*/
+.top-bar__right {
+  display: flex;
+  align-items: center;
+}
+ 
+/*  define el estilo de los enlaces dentro de la barra superior*/
+.top-bar__right a {
+  margin-left: 20px; /* margen izquierdo */
+  color: #fff;
+  text-decoration: none; /* sin subrayado */
+}
+
+/* se aplica a todos los enlaces de la pagina*/
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Se indica que el margen derecho debe ser 0 si el enlace es el ultimo elemento del contenedor */
+a:last-of-type {
+  margin-right: 0; 
+}
+
+/* Estilo para las imagenes del lado derecho de la barra */
+.top-bar__right img {
+  height: 30px; /* Altura */
+  width: auto; /* Ancho */
+  margin-right: 10px; /* Margen derecho */
+}
+
+/* define estilo del banner principal*/
+.banner {
+  background-color: white;
+  display: flex; 
+  justify-content: space-between; /* los elementos se colocan uno a cada lado */
+  align-items: center; /* elementos se centran verticalmente */ 
+  height: 100px;
+  padding: 0 150px; /* espacio entre los bordes y los elementos */ 
+}
+
+/* definen tamaño de las imagenes contenedor izquierdo */ 
+.left-section img {
+  width: 340px;
+  height: 340px;
+  object-fit: contain; /* imagenes se ajustan en tamaño al contenedor */ 
+}
+
+/* define estilo del boton mi cuenta*/
+.btn-micuenta {
+  background-color: #14b91a;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: Arial;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/* contenedor izquierdo dentro del banner */ 
+.left-section {
+  display: flex;
+  align-items: center;
+  margin-left: 140px;
+}
+
+/* contenedor derecho dentro del banner */ 
+.right-section {
+  display: flex;
+  align-items: center;
+  margin-right: 180px;
+}
+/* contenedor con un menu de navegacion */ 
+.menu {
+  background-color: white;
+  display: flex; /* contenedor flexible */
+  flex-direction: row; /* establece la direccion como una fila*/
+  justify-content: center;
+  align-items: center; /* centrado verticalmente */ 
+  padding: 1px;
+  font-family: Arial;
+  font-size: 14px; /* tamaño de la fuente*/ 
+
+  
+}
+
+.menu-item:first-child {
+  border-right: 5px solid #000;
+}
+
+/*se aplica a la lista no ordenada */ 
+.menu ul {
+  list-style: none; /* elimina puntos que aparecen por defecto antes de cada elemento del menu */ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* se aplica a cada elemento del menu*/
+.menu li {
+  margin-right: 20px;
+}
+
+/* se aplica a cada enlace dentro del menu */
+.menu a {
+  color: black;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+/* se aplica al enlace del menu cuando el cursor se pone sobre el*/
+.menu a:hover {
+  background-color: rgb(116, 116, 116);
+  color: white;
+  border: 1px solid #ccc;
+  padding: 10px 40px;
+}
+
+/* se aplica un estilo a los enlaces del menu cuando se hace click sobre*/
+.menu a:active {
+  background-color: #555;
+  color: white;
+}
+
+.menu-item-divider {
+  display: inline-block;
+  height: 20px;
+  border-left: 1px solid rgb(0, 0, 0);
+  margin: 0 0px;
+  vertical-align: middle;
+}
+
+/* aplica estilo al ultimo enlace de la lista de enlaces */
+.menu a:last-child {
+  margin-right: 10;
+}
+
+.slider {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+
+.simula-credito {
+  background-color: #f2f2f2;
+  border: 1px solid #c5c5c5;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+}
+
+.simula-credito-texto {
+  font-weight: bold;
+  font-size: 26px;
+  font-family: Arial;
+  margin-right: 360px;
+  margin-left: 40px;
+}
+
+.simula-credito-input {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.simula-credito-input input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #c5c5c5;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.simula-credito-input button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.simula-credito::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #f2f2f2;
+  border-bottom: 10px solid #f2f2f2;
+  border-left: 10px solid #c5c5c5;
+  border-right: none;
+  position: absolute;
+  left: 25px;
+  bottom: -20px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center; /* Agregado: Centrar horizontalmente */
+  align-items: center;
+  background-color: #fff;
+  font-family: Arial;
+  width: 10%; /* Agregado: Ancho completo */
+  max-width: 1200px; /* Agregado: Ancho máximo */
+  margin: 0 auto; /* Agregado: Margen automático para centrar horizontalmente */
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.item:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.item img {
+  max-width: 100%;
+}
+
+.item h2, .item p {
+  margin: 0;
+  text-align: center;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  font-family: Arial;
+  text-align: center;
+}
+
+/* Establece un margen inferior de 10 píxeles en el título */
+.text h2 {
+  margin-bottom: 30px;
+  line-height: 1.2em; /* o cualquier otro valor que se adapte a tu diseño */
+  height: 2.4em; /* el doble del valor de line-height para dos líneas de texto */
+  overflow: hidden; /* evita que el texto se desborde del contenedor */
+}
+
+/* Establece un margen inferior de 20 píxeles en la descripción */
+.text p {
+  margin-bottom: 50px;
+}
+
+
+.btn {
+  padding: 10px 20px;
+  background-color: #00b300;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+  flex: 1;
+  position: relative;
+}
+
+.image img {
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+.image:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+footer {
+  position: relative;
+  background-color: rgb(50, 53, 59);
+  display: flex;
+  color: rgb(255, 255, 255);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial;
+ 
+  
+}
+
+.lista-container {
+  display: flex;
+  padding: 40px;
+
+  
+} 
+
+.lista-container > div {
+  flex: 1;
+  margin-right: 20px;
+  padding: -10px;
+  
+  
+}
+
+.btn-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.phone-btn,
+.social-btn {
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.phone-btn {
+  padding: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.social-btn {
+  padding: 5px;
+  margin-right: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.phone-btn i,
+.social-btn i {
+  margin-right: 10px;
+}
+
+.social-btns {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.social-btn:not(:last-child) {
+  margin-right: 0px;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Arial;
+}
+
